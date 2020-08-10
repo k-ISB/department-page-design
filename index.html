@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+  <script src="./script.js"></script>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-myDark myfade">
+    <a id="logo" class="navbar-brand m-2" href="#">情報メディア学科</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-lowercase" id="navbarText">
+      <ul class="navbar-nav mr-auto text-right"></ul>
+      <span class="navbar-text text-lowercase">
+        <a href="#">> 東京電機大学</a>
+      </span>
+      <span class="navbar-text text-lowercase">
+        <a href="#">> 未来科学部</a>
+      </span>
+      <span class="navbar-text text-lowercase rounded mr-2">
+        <ul id="flip2" class="my-dropmenu">
+          <li><a href="#">▼</a>
+            <ul>
+              <li><a class="mt-3" href="#news">お知らせ</a></li>
+              <li><a class="mt-3" href="#about">情報メディア学とは</a></li>
+              <li><a class="mt-3" href="#lab">研究室</a></li>
+              <li><a class="mt-3" href="#student">学生の声</a></li>
+              <li><a class="mt-3" href="#employment">就職先</a></li>
+            </ul>
+          </li>
+        </ul>
+      </span>
+    </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid main-img clearfix mainfade">
+    <div class="container catch-copy">
+      <h1 class="myfade" style="line-height: 65px">情報とメディアへの理解を深め<br>人と社会、コンピュータを結びつける</h1>
+    </div>
+  </div>
+  <section id="news">
+    <div class="container">
+      <h2 class="news-title">お知らせ</h2>
+      <div class="news-content text-center">
+        <div id="news-list" class="list-group list-group-flush"></div>
+        <button type="button" class="btn btn-outline-info m-3">all view　></button>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container clearfix">
+      <h2>情報メディア学とは</h2>
+      <div class="row fade_off">
+        <div class="col-md about-img about-img1"></div>
+        <div class="col-md unit"></div>
+      </div>
+      <div class="row fade_off">
+        <div class="col-md unit"></div>
+        <div class="col-md about-img about-img2"></div>
+      </div>
+      <div class="row fade_off">
+        <div class="col-md about-img about-img3"></div>
+        <div class="col-md unit"></div>
+      </div>
+    </div>
+  </section>
+  <section id="lab">
+    <div class="container">
+      <h2>研究室</h2>
+      <div class="row fade_off">
+        <div class="col-md">
+          <div class="lab-icons mx-auto">
+            <div id="lab-icon" class="list-group list-group-flush pb-4"></div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="tab-content" id="nav-tabContent">
+            <div id="lab-details" class="position-relative"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="student">
+    <div class="container text-center clearfix">
+      <h2 class="fade_off">学生の声</h2>
+      <h5 class="m-3">WEB INTERVIEW -活躍する在学生- </h5>
+      <div class="student-slide mx-auto text-center">
+        <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner rounded">
+            <div id="carousel-item"></div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <button type="button" class="btn btn-outline-info m-4">all read　></button>
+    </div>
+  </section>
+  <section id="employment">
+    <div class="container clearfix">
+      <div class="employment-title">
+        <h2>就職先</h2>
+      </div>
+        <div class="row">
+          <div class="col-md fade_off">
+            <img src="./img/graff.png" class="employment-graf mb-3"></img>
+          </div>
+          <div class="col-md">
+            <h4 class="employment-sub-title mb-5 fade_off">主な就職先</h4>
+            <div class="mt-3 fade_off">
+              <p class="employment-example">(株)IMAGICA、 (株)NECソフト、 (株)TBSサービス、 (株)インターネットイニシアティブ、 NTTデータ(株)、 キヤノン(株)、 
+                グリー(株)、 (株)コーエーテクモホールディングス、 シスコシステムズ(株)、 セイコーエプソン(株)、 (株)セガ、 ソネットエンタテイメント(株)、 
+                ソフトバンクBB(株)、大日本印刷(株)、 電通国際情報サービス(株)、 (株)東京サウンド・プロダクション、 (株)東芝、 東洋レコーディング(株)、 凸版印刷(株)、 
+                トレンドマイクロ(株)、 (株)ドワンゴ、 日産自動車(株)、 (株)ニフティ、 日本電気(株)、 日本IBM(株)、 (株)野村総合研究所、 東日本旅客鉄道(株)、 
+                ピクシブ(株)、 (株)日立製作所、 富士ゼロックス(株)、 富士通(株)、 (株)毎日コミュニケーションズ、 (株)ミクシィ、 みずほ情報総研(株)、 三菱電機(株)、 
+                ヤフー(株)、 (株)USEN、 (株)ゆうちょ銀行、楽天(株) ほか (50音順)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="mb-0 border-top">
+    <!-- <p class="float-right"><a href="#">トップに戻る</a></p> -->
+    <p class="text-center">&copy; 2020 Company, Inc.</p>
+  </footer>
+</body>
+</html>

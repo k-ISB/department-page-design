@@ -1,0 +1,239 @@
+  @font-face {
+    font-family: 'Noto Serif Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/NotoSerifCJKjp/NotoSerifCJKjp-Regular.otf') format('opentype');
+  }
+
+.bg-myDark{
+    background-color: rgba(255,255,255,.8);
+    border-bottom: rgb(105, 176, 204);
+    padding: 0 60px;
+}
+#logo{
+    font-size: x-large;
+    text-shadow: 2px 3px 2px #808080;
+}
+.navbar-text{
+    padding-right: 20px;
+    font-size: small;
+}
+.dropdown-item{
+    line-height: 3em;
+    border-bottom: silver;
+}
+.catch-copy{
+    line-height: 65px;
+    font-family: 'Noto Serif Japanese';
+    margin-left: 60px;
+}
+
+h2{
+    text-align: center;
+    padding: 35px;
+    font-family: 'Larsseit-Light''Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo;
+}
+.main-img{
+    /* background: linear-gradient(135deg, rgba(245, 240, 241, .4), rgba(230, 231, 235, .1)),url(./img/main-img3.jpg);  */
+    background-image: url(./img/main-img5.jpg);
+    background-size: cover; 
+    background-position: bottom 0%;
+    background-position: right 0%;
+    height: 100vh;
+    padding-top: 32%;  /* 縦幅の調整 */
+    margin-bottom: 0;
+}
+.news-title{
+    padding-bottom: 20px;
+}
+#news-list > .list-group-item{
+    height: 3rem;
+    padding: 0;
+}
+#news-list > .list-group-item > p{
+    margin-bottom: 0;
+    line-height: 3rem;
+}
+#about{
+    background: url(./img/about2.jpg);
+    background-size: cover; 
+    background-position: top 0%;
+    padding-bottom: 80px;
+    /* background: linear-gradient(135deg, rgba(125, 120, 255, .3), rgba(210, 211, 256, .6)),url(./img/about2.jpg);  */
+}
+.about-img{
+    height:280px;
+    margin-bottom: 10px;
+}
+.about-img1{
+    background-image: url(./img/gkka2.png);
+    background-size: cover; 
+    background-position: center 0%;
+}
+.about-img2{
+    background-image: url(./img/key.jpg);
+    background-size: cover; 
+    background-position: center 0%;
+}
+.about-img3{
+    background-image: url(./img/unit.png);
+    background-size: cover; 
+    background-position: center 0%;
+}
+.lab-icons{
+    width: 90%;
+}
+.lab-imgs{
+    width: 50%;
+    padding: 15px;
+}
+.list-group-item.active{
+    background-color: #40abff;
+}
+.lab-sub-title{
+    margin: 30px 0 35px;
+}
+
+#student{
+    background-color: #FEFcf3;
+    /* background-color: linear-gradient(135deg, rgba(125, 120, 255, .3), rgba(210, 211, 256, .6)) */
+}
+.carousel{
+    width: 60%;
+}
+.slide-img{
+    width:100%;
+    background-size: cover; 
+    background-position: center 0%;
+}
+.slide-text{
+    background: rgba(40,40,40,.7);
+    display: inline-block;
+}
+.student-slide{
+    border: saddlebrown;
+}
+#employment{
+    background-color: rgb(236, 239, 241);
+}
+.employment-graf{
+    width: 85%;
+}
+footer{
+    width: 100%;
+    background-color: #40abff;
+}
+footer p{
+    margin-bottom: 0;
+    line-height: 4em;
+}
+
+
+/* ここからアニメーション */
+.myfade {
+    opacity: 0;
+    transition: 2.5s;
+    margin-top: 45px;
+}
+.fade_in {
+    opacity: 0.9;
+    margin-top: 0;
+}
+.mainfade {
+    opacity: 0;
+    transition: 4s;
+}
+.mainfade_in {
+    opacity: 1;
+}
+.fade_off {
+    opacity: 0; 
+    transition: all 1s; 
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    margin-top: 40px;
+}
+.fade_on { 
+    opacity: 1;
+    margin-top: 0;
+}
+
+
+  /* ここからドロップダウン */
+  .my-dropmenu{
+    *zoom: 1;
+    list-style-type: none;
+    width: 15px;
+    height: 15px;
+    margin: 5px auto 20px;
+  }
+  .my-dropmenu li{
+    position: relative;
+    width: 17px;
+    margin: 0;
+    padding: 0;
+  }
+  .my-dropmenu li a{
+    display: inline-block;
+    padding: 10px;
+    background: rgba(105,105,205,.4);
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+  }
+  .my-dropmenu li ul{
+    list-style: none;
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .my-dropmenu li ul li{
+    width: 100%;
+  }
+  .my-dropmenu li ul li a{
+    padding: 8px 10px;
+    background: rgba(165,165,235,.8);
+    
+  }
+  .my-dropmenu li:hover > a{
+    background: rgba(105,105,205,.6);
+  }
+  .my-dropmenu li a:hover{
+    background: rgba(105,105,205,.6);
+  }
+
+  #flip2 li ul {
+    visibility: hidden;
+    perspective: 400px;
+  }
+  #flip2 li:hover ul{
+    visibility: visible;
+  }
+  #flip2 ul li{
+    transform: rotateY(90deg);
+    transform-origin: 50% 0;
+    transition: .3s;
+  }
+  #flip2 li:hover li{
+    transform: rotateY(0);
+  }
+  #flip2 ul li:nth-child(2) {
+    transition-delay: .1s;
+  }
+  #flip2 ul li:nth-child(3) {
+    transition-delay: .2s;
+  }
+  #flip2 ul li:nth-child(4) {
+    transition-delay: .3s;
+  }
+  #flip2 ul li:nth-child(5) {
+    transition-delay: .4s;
+  }
+  #flip2 ul li:nth-child(6) {
+    transition-delay: .5s;
+  }
